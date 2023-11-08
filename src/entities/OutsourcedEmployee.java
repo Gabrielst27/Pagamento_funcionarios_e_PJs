@@ -27,7 +27,7 @@ public final class OutsourcedEmployee extends Employee {
 	}
 	
 	public String toString() {
-		return "Name: " + name + ", payment: " + String.format("%.2f", payment());
+		return name + ", payment: $" + String.format("%.2f", payment());
 	}
 
 }
