@@ -50,6 +50,12 @@ public class Program {
 				Employee employee = new Employee(name, hours, valuePerHour);
 				employees.add(employee);
 			}
+			
+			sc.nextLine();
+		}
+		
+		for (Employee e : employees) {
+			System.out.println(e);
 		}
 		
 		sc.close();
