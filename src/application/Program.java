@@ -24,6 +24,7 @@ public class Program {
 		for(int i = 1; i <= n; i++) {
 			System.out.print("Outsourced?(y/n): ");
 			String aux = sc.nextLine();
+			
 			if(aux.toUpperCase().equals("Y")) {
 				System.out.print("Enter employee's name: ");
 				String name = sc.nextLine();
@@ -38,7 +39,16 @@ public class Program {
 				Employee employee = new OutsourcedEmployee(name, hours, valuePerHour, additionalCharge);
 				employees.add(employee);
 			} else {
+				System.out.print("Enter employee's name: ");
+				String name = sc.nextLine();
+				System.out.print("Hours worked: ");
+				int hours = sc.nextInt();
+				sc.nextLine();
+				System.out.print("Value per hour: ");
+				Double valuePerHour = sc.nextDouble();
 				
+				Employee employee = new Employee(name, hours, valuePerHour);
+				employees.add(employee);
 			}
 		}
 		

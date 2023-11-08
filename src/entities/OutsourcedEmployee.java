@@ -25,5 +25,9 @@ public final class OutsourcedEmployee extends Employee {
 	public Double payment() {
 		return (valuePerHour * hours) + (additionalCharge * 1.1);
 	}
+	
+	public String toString() {
+		return "Name: " + name + ", payment: " + String.format(".2f", payment());
+	}
 
 }

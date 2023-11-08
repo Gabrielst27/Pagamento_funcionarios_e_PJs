@@ -43,5 +43,9 @@ public class Employee {
 	public Double payment() {
 		return valuePerHour * hours;
 	}
+	
+	public String toString() {
+		return "Name: " + name + ", payment: " + String.format(".2f", payment());
+	}
 
 }
